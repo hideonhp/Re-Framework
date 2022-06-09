@@ -9,14 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ${{ matrix.os }}
-    
-    strategy:
-      matrix:
-        os: [windows-latest, ubuntu-latest, macOS-latest]
-        nuget: [latest, preview, 4.x, 5.3.1]
-        
-    name: NuGet@${{ matrix.nuget }} sample
+    runs-on: windows-latest
     
     steps:
     - uses: actions/checkout@master
@@ -26,7 +19,7 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.6
       with:
         nuget-api-key: ${{ secrets.NuGetAPIKey }}
-        nuget-version: ${{ matrix.nuget }}
+        nuget-version: '5.x'
     - run: nuget restore Re-Framework.sln
     - name: Restore dependencies
       run: dotnet restore
