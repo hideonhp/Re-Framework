@@ -38,6 +38,8 @@ namespace Re_Framework.TestSuites.ElementsTestCase
 
             List<string> testTD = await elementsPage.GetWebTableTDAsync();
             List<string> testTR = await elementsPage.GetWebTableTRAsync();
+
+            var debug = "on";
         }
     }
 }
