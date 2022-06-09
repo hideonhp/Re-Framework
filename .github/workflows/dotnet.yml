@@ -9,17 +9,28 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
-
+    runs-on: ${{ matrix.os }}
+    
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macOS-latest]
+        nuget: [latest, preview, 4.x, 5.3.1]
+        
+    name: NuGet@${{ matrix.nuget }} sample
+    
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@master
     - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.2
+      uses: microsoft/setup-msbuild@v1.1
+    - name: Setup NuGet.exe
+      uses: NuGet/setup-nuget@v1.0.6
+      with:
+        nuget-api-key: ${{ secrets.NuGetAPIKey }}
+        nuget-version: ${{ matrix.nuget }}
+    - run: nuget restore Re-Framework.sln
     - name: Restore dependencies
       run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
+    - name: Build app for release
+      run: msbuild src\Re-Framework.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
     - name: Test
       run: dotnet test --no-build --verbosity normal
