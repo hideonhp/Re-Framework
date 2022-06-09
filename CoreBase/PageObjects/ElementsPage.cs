@@ -281,7 +281,7 @@ namespace Re_Framework.CoreBase.PageObjects
         public async Task<List<string>> GetWebTableTRAsync()
         {
             await CheckWebTableComponentIsEnable();
-            List<string> text = WebTableHelper.GetAllRowTRFromTable(WebTableComponent, (int)Locator.CssSelector);
+            List<string> text = WebTableHelper.GetAllRowTRFromTable(WebTableComponent, (int)Locator.XPath);
             return text;
         }
 
