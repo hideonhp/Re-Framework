@@ -14,7 +14,12 @@ namespace Re_Framework.CoreBase.Helper.Element
     {
         private static readonly ILog Logger = Log4NetHelper.GetXmlLogger(typeof(TextBoxHelper));
         private static IWebElement element;
-
+        public static bool IsEnabled(string locator, int type = (int)Locator.CssSelector)
+        {
+            element = GenericHelper.GetElement(locator, type);
+            Logger.Info(" Checking Is WebTable Enabled ");
+            return element.Enabled;
+        }
         public static List<string> GetAllRowTDFromTable(string locator, int type = (int)Locator.CssSelector)
         {
             element = GenericHelper.GetElement(locator, type);

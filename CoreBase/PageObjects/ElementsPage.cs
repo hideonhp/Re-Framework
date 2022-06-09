@@ -26,6 +26,8 @@ namespace Re_Framework.CoreBase.PageObjects
         protected string WebTablesLink = "//*[@id='item-3']";
         protected string TextBoxSubmitButton = "//*[@id='submit']";
 
+        protected string WebTableComponent = ".rt-table";
+
         protected string UserMailTextBox = "#userEmail";
         protected string UserNameTextBox = "#userName";
         protected string UserCurrentAdressTextBox = "#currentAddress";
@@ -99,6 +101,11 @@ namespace Re_Framework.CoreBase.PageObjects
         protected Task<bool> CheckCheckBoxLinkIsEnable()
         {
             WaitHelper.NaniWait(() => ButtonHelper.IsButtonEnabled(CheckBoxLink, (int)Locator.XPath));
+            return Task.FromResult(true);
+        }
+        protected Task<bool> CheckWebTableComponentIsEnable()
+        {
+            WaitHelper.NaniWait(() => WebTableHelper.IsEnabled(WebTableComponent, (int)Locator.CssSelector));
             return Task.FromResult(true);
         }
         protected Task<bool> CheckWebTableLinkIsEnable()
@@ -265,16 +272,16 @@ namespace Re_Framework.CoreBase.PageObjects
             return text;
         }
 
-        public async Task<string> GetWebTableTDAsync()
+        public async Task<List<string>> GetWebTableTDAsync()
         {
-            await CheckWebTableLinkIsEnable();
-            var text = TextHelper.GetTextInside(WebTablesLink, (int)Locator.XPath);
+            await CheckWebTableComponentIsEnable();
+            List<string> text = WebTableHelper.GetAllRowTDFromTable(WebTableComponent, (int)Locator.CssSelector);
             return text;
         }
-        public async Task<string> GetWebTableTRAsync()
+        public async Task<List<string>> GetWebTableTRAsync()
         {
-            await CheckWebTableLinkIsEnable();
-            var text = TextHelper.GetTextInside(UserPermanentAdressReturn, (int)Locator.XPath);
+            await CheckWebTableComponentIsEnable();
+            List<string> text = WebTableHelper.GetAllRowTRFromTable(WebTableComponent, (int)Locator.CssSelector);
             return text;
         }
 
