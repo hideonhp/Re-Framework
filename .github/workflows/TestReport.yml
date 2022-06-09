@@ -11,13 +11,13 @@ jobs:
     runs-on: windows-latest
     steps:
 
-      - name: unit tests for Contoso Business Layer
-        uses: zyborg/dotnet-tests-report@v1
+      - name: unit tests
+        uses: zyborg/dotnet-tests-report@v1.4.4
         with:
-          project_path: TestSuites/ElementsTestCase
-          report_name: contoso_business_tests
-          report_title: Contos Business Tests
+          project_path: TestSuites/
+          report_name: unit tests
+          report_title: unit tests
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          gist_name: contoso_business_tests.md
+          gist_name: README.md
           gist_badge_label: 'Contoso Business: %Counters_passed%/%Counters_total%'
           gist_token: ${{ secrets.GIST_TOKEN }}
