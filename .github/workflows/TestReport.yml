@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Test Report
 
 # Controls when the workflow will run
@@ -9,12 +7,17 @@ on:
     types:
       - completed
 jobs:
-  report:
+  test:
     runs-on: windows-latest
     steps:
-    - uses: dorny/test-reporter@v1
-      with:
-        artifact: test-results            # artifact name
-        name: JEST Tests                  # Name of the check run which will be created
-        path: '*.xml'                     # Path to test results (inside artifact .zip)
-        reporter: jest-junit  
+
+      - name: unit tests for Contoso Business Layer
+        uses: zyborg/dotnet-tests-report@v1
+        with:
+          project_path: TestSuites/ElementsTestCase
+          report_name: contoso_business_tests
+          report_title: Contos Business Tests
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          gist_name: contoso_business_tests.md
+          gist_badge_label: 'Contoso Business: %Counters_passed%/%Counters_total%'
+          gist_token: ${{ secrets.GIST_TOKEN }}
