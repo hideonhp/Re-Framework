@@ -1,0 +1,98 @@
+07-Jun-2022-16:17:34 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-16:17:36 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-16:17:36 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-16:17:37 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://voz.vn/
+07-Jun-2022-16:17:37 [Re_Framework.CoreBase.Helper.Common.GenericHelper] [INFO] [IsElemetPresent] -  Checking for the element .p-navgroup-link--logIn > .p-navgroup-linkText
+07-Jun-2022-16:17:39 [Re_Framework.CoreBase.BaseClass] [INFO] [TearDown] -  Stopping the Driver  
+07-Jun-2022-16:22:04 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-16:22:08 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-16:22:08 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-16:22:09 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://voz.vn/
+07-Jun-2022-16:22:09 [Re_Framework.CoreBase.Helper.Common.GenericHelper] [INFO] [IsElemetPresent] -  Checking for the element .p-navgroup-link--logIn > .p-navgroup-linkText
+07-Jun-2022-16:22:11 [Re_Framework.CoreBase.BaseClass] [INFO] [TearDown] -  Stopping the Driver  
+07-Jun-2022-16:25:22 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-16:25:25 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-16:25:25 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-16:25:25 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://voz.vn/
+07-Jun-2022-16:25:25 [Re_Framework.CoreBase.Helper.Common.GenericHelper] [INFO] [IsElemetPresent] -  Checking for the element .p-navgroup-link--logIn > .p-navgroup-linkText
+07-Jun-2022-16:25:28 [Re_Framework.CoreBase.BaseClass] [INFO] [TearDown] -  Stopping the Driver  
+07-Jun-2022-16:26:51 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-16:26:53 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-16:26:53 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-16:26:53 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://voz.vn/
+07-Jun-2022-16:26:56 [Re_Framework.CoreBase.BaseClass] [INFO] [TearDown] -  Stopping the Driver  
+07-Jun-2022-16:28:49 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-16:28:51 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-16:28:51 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-16:29:00 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://voz.vn/
+07-Jun-2022-16:29:38 [Re_Framework.CoreBase.Helper.Common.GenericHelper] [INFO] [IsElemetPresent] -  Checking for the element .p-navgroup-link--logIn > .p-navgroup-linkText
+07-Jun-2022-16:30:05 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [ClickButton] -  Button Click @ .p-navgroup-link--logIn > .p-navgroup-linkText
+07-Jun-2022-16:30:24 [Re_Framework.CoreBase.Helper.Common.GenericHelper] [INFO] [IsElemetPresent] -  Checking for the element //input[@id='_xfUid-1-1654584004']
+07-Jun-2022-16:30:36 [Re_Framework.CoreBase.BaseClass] [INFO] [TearDown] -  Stopping the Driver  
+07-Jun-2022-18:15:34 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-18:15:38 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-18:15:38 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-18:15:53 [Re_Framework.CoreBase.BaseClass] [INFO] [TearDown] -  Stopping the Driver  
+07-Jun-2022-19:57:08 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-19:57:09 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-19:57:09 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-19:57:15 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://demoqa.com/
+07-Jun-2022-19:58:55 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-19:58:56 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-19:58:56 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-19:59:04 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://demoqa.com/
+07-Jun-2022-20:01:07 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-20:01:09 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-20:01:09 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-20:01:17 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://demoqa.com/
+07-Jun-2022-20:01:17 [Re_Framework.CoreBase.Helper.Common.GenericHelper] [INFO] [IsElemetPresent] -  Checking for the element .card:nth-child(1) svg
+07-Jun-2022-20:01:17 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [ClickButton] -  Button Click @ .card:nth-child(1) svg
+07-Jun-2022-20:01:17 [Re_Framework.CoreBase.Helper.Common.GenericHelper] [INFO] [IsElemetPresent] -  Checking for the element #userEmail
+07-Jun-2022-20:01:19 [Re_Framework.CoreBase.BaseClass] [INFO] [TearDown] -  Stopping the Driver  
+07-Jun-2022-20:05:00 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-20:05:01 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-20:05:01 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-20:05:08 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://demoqa.com/
+07-Jun-2022-20:05:08 [Re_Framework.CoreBase.Helper.Common.GenericHelper] [INFO] [IsElemetPresent] -  Checking for the element .card:nth-child(1) svg
+07-Jun-2022-20:05:09 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [ClickButton] -  Button Click @ .card:nth-child(1) svg
+07-Jun-2022-20:05:09 [Re_Framework.CoreBase.Helper.Common.GenericHelper] [INFO] [IsElemetPresent] -  Checking for the element //li[@id='item-0']
+07-Jun-2022-20:05:09 [Re_Framework.CoreBase.BaseClass] [INFO] [TearDown] -  Stopping the Driver  
+07-Jun-2022-20:12:16 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-20:12:17 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-20:12:17 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-20:12:25 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://demoqa.com/
+07-Jun-2022-20:13:27 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-20:13:28 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-20:13:28 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-20:13:38 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://demoqa.com/
+07-Jun-2022-20:18:07 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-20:18:08 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-20:18:08 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-20:18:16 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://demoqa.com/
+07-Jun-2022-20:20:02 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-20:20:04 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-20:20:04 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-20:20:13 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://demoqa.com/
+07-Jun-2022-20:20:33 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [IsButtonEnabled] -  Checking Is Button Enabled 
+07-Jun-2022-20:20:56 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [ClickButton] -  Button Click @ //html/body/div[2]/header/a/img
+07-Jun-2022-20:23:31 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-20:23:32 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-20:23:32 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-20:23:39 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://demoqa.com/
+07-Jun-2022-20:23:39 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [IsButtonEnabled] -  Checking Is Button Enabled 
+07-Jun-2022-20:23:40 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [ClickButton] -  Button Click @ /html/body/div[2]/div/div/div[2]/div/div[1]
+07-Jun-2022-20:23:40 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [IsButtonEnabled] -  Checking Is Button Enabled 
+07-Jun-2022-20:23:40 [Re_Framework.CoreBase.BaseClass] [INFO] [TearDown] -  Stopping the Driver  
+07-Jun-2022-20:24:08 [Re_Framework.CoreBase.BaseClass] [INFO] [GetChromeOptions] -  Using Chrome Options 
+07-Jun-2022-20:24:09 [Re_Framework.CoreBase.BaseClass] [INFO] [InitWebdriver] -  Using Chrome Driver  
+07-Jun-2022-20:24:09 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [BrowserMaximize] -  Browser Maximize 
+07-Jun-2022-20:24:16 [Re_Framework.CoreBase.Helper.Common.BrowserHelper] [INFO] [NavigateToUrl] -  Navigate To Page https://demoqa.com/
+07-Jun-2022-20:24:16 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [IsButtonEnabled] -  Checking Is Button Enabled 
+07-Jun-2022-20:24:16 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [ClickButton] -  Button Click @ /html/body/div[2]/div/div/div[2]/div/div[1]
+07-Jun-2022-20:24:17 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [IsButtonEnabled] -  Checking Is Button Enabled 
+07-Jun-2022-20:24:17 [Re_Framework.CoreBase.Helper.Element.ButtonHelper] [INFO] [ClickButton] -  Button Click @ //li[@id='item-0']
+07-Jun-2022-20:24:17 [Re_Framework.CoreBase.Helper.Element.TextBoxHelper] [INFO] [IsTextBoxEnabled] -  Checking Is Textbox Enabled 
+07-Jun-2022-20:24:17 [Re_Framework.CoreBase.Helper.Element.TextBoxHelper] [INFO] [IsTextBoxEnabled] -  Checking Is Textbox Enabled 
+07-Jun-2022-20:24:17 [Re_Framework.CoreBase.Helper.Element.TextBoxHelper] [INFO] [IsTextBoxEnabled] -  Checking Is Textbox Enabled 
+07-Jun-2022-20:24:17 [Re_Framework.CoreBase.Helper.Element.TextBoxHelper] [INFO] [IsTextBoxEnabled] -  Checking Is Textbox Enabled 
+07-Jun-2022-20:24:21 [Re_Framework.CoreBase.BaseClass] [INFO] [TearDown] -  Stopping the Driver  
