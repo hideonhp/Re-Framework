@@ -16,10 +16,9 @@ jobs:
     - run: npm ci
     - run: npm test
     - uses: actions/upload-artifact@v2 
-        if: success() || failure() 
-        with:
-          name: test-results
-          path: jest-junit.xml
+      with:
+        name: test-results
+        path: jest-junit.xml
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.1
     - name: Setup NuGet.exe
