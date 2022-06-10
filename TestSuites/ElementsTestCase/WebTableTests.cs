@@ -14,7 +14,7 @@ namespace Re_Framework.TestSuites.ElementsTestCase
     [TestClass]
     public class WebTableTests
     {
-        [TestMethod("Check Webtable submitable")]
+        [TestMethod("Check WebTable submitable")]
         [TestCategory("WebTable tests")]
         public async Task WebTableTests1()
         {

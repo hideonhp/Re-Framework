@@ -1,0 +1,33 @@
+name: Elements CheckBox
+
+on:
+    workflow_dispatch:
+        inputs:
+            logLevel:
+                description: 'Automation Test for Elements'     
+                required: true
+                default: 'warning'
+            tags:
+                description: 'Ui Test'  
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@master
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+    - name: Setup NuGet.exe
+      uses: NuGet/setup-nuget@v1.0.6
+      with:
+        nuget-api-key: ${{ secrets.NuGetAPIKey }}
+        nuget-version: '5.x'
+    - run: nuget restore Re-Framework.sln
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build app for release
+      run: msbuild Re-Framework.csproj
+    - name: Test Check Box
+      run: dotnet test --filter TestCategory="TextBox tests"
