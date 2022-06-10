@@ -1,0 +1,14 @@
+name: Elements CheckBox
+
+on:
+  workflow_run:
+    workflows: ['.Net']
+    types:
+      - completed
+      
+jobs:
+    test:
+        runs-on: windows-latest
+        steps:
+        - name: Test Check Box
+          run: dotnet test --filter TestCategory="CheckBox tests"
