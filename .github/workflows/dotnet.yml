@@ -26,4 +26,4 @@ jobs:
     - name: Build app for release
       run: msbuild Re-Framework.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --filter TestCategory="TextBox tests"
