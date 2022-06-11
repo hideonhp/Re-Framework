@@ -1,14 +1,10 @@
 ﻿using log4net;
 using OpenQA.Selenium;
-using Re_Framework.CoreBase.Helper.Common;
+using Re_Framework.CoreBase.Helper.Element;
 using Re_Framework.CoreBase.Helper.Enum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace Re_Framework.CoreBase.Helper.Element
+namespace Re_Framework.CoreBase.Helper.Common
 {
     public class CheckerHelper
     {

@@ -1,0 +1,18 @@
+﻿{
+  "password": "Ah1h1@ahuhu.com",
+  "userId": "1999",
+  "username": "Ahihi_1",
+  "books": [
+    {
+      "isbn": "string",
+      "title": "string",
+      "subTitle": "string",
+      "author": "string",
+      "publish_date": "2022-06-11T12:21:11.372Z",
+      "publisher": "string",
+      "pages": 0,
+      "description": "string",
+      "website": "string"
+    }
+  ]
+}
