@@ -14,14 +14,10 @@ namespace Re_Framework.CoreBase.Helper.Element
     {
         private static readonly ILog Logger = Log4NetHelper.GetXmlLogger(typeof(TextBoxHelper));
         private static IWebElement element;
-        public static bool IsEnabled(string locator, int type = (int)Locator.CssSelector)
+
+        public static async Task<List<string>> GetAllRowTDFromTableAsync(string locator, int type = (int)Locator.CssSelector)
         {
-            element = GenericHelper.GetElement(locator, type);
-            Logger.Info(" Checking Is WebTable Enabled ");
-            return element.Enabled;
-        }
-        public static List<string> GetAllRowTDFromTable(string locator, int type = (int)Locator.CssSelector)
-        {
+            await CheckerHelper.CheckElementIsEnable(locator, type);
             element = GenericHelper.GetElement(locator, type);
             List<IWebElement> lstTrElem = new List<IWebElement>(element.FindElements(By.TagName("tr")));
             String[] allTextTD = new String[lstTrElem.Count];
@@ -43,8 +39,9 @@ namespace Re_Framework.CoreBase.Helper.Element
             return list;
         }
 
-        public static List<string> GetAllRowTRFromTable(string locator, int type = (int)Locator.CssSelector)
+        public static async Task<List<string>> GetAllRowTRFromTableAsync(string locator, int type = (int)Locator.CssSelector)
         {
+            await CheckerHelper.CheckElementIsEnable(locator, type);
             element = GenericHelper.GetElement(locator, type);
             List<IWebElement> lstTrElem = new List<IWebElement>(element.FindElements(By.TagName("tr")));
             String[] allTextTR = new String[lstTrElem.Count];

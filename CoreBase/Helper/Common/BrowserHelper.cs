@@ -8,7 +8,7 @@ namespace Re_Framework.CoreBase.Helper.Common
 {
     public class BrowserHelper
     {
-        private static readonly ILog Logger = Log4NetHelper.GetXmlLogger(typeof(BrowserHelper));
+        protected static readonly ILog Logger = Log4NetHelper.GetXmlLogger(typeof(BrowserHelper));
         public static void BrowserMaximize()
         {
             ObjectRepository.Driver.Manage().Window.Maximize();

@@ -208,6 +208,7 @@
     <Compile Include="CoreBase\Helper\Common\WaitHelper.cs" />
     <Compile Include="CoreBase\Helper\Element\ButtonHelper.cs" />
     <Compile Include="CoreBase\Helper\Element\CheckBoxHelper.cs" />
+    <Compile Include="CoreBase\Helper\Element\CheckerHelper.cs" />
     <Compile Include="CoreBase\Helper\Element\RadioButtonHelper.cs" />
     <Compile Include="CoreBase\Helper\Element\TextBoxHelper.cs" />
     <Compile Include="CoreBase\Helper\Element\TextHelper.cs" />

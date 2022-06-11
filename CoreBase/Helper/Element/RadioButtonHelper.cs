@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using Re_Framework.CoreBase.Helper.Common;
 using Re_Framework.CoreBase.Helper.Enum;
+using System.Threading.Tasks;
 
 namespace Re_Framework.CoreBase.Helper.Element
 {
@@ -8,8 +9,9 @@ namespace Re_Framework.CoreBase.Helper.Element
     {
         protected static IWebElement element;
 
-        public static void ClickRadioButton(string locator, int type = (int)Locator.CssSelector)
+        public static async Task ClickRadioButtonAsync(string locator, int type = (int)Locator.CssSelector)
         {
+            await CheckerHelper.CheckElementIsEnable(locator, type);
             element = GenericHelper.GetElement(locator, type);
             string flag = element.GetAttribute("checked");
 
@@ -17,8 +19,9 @@ namespace Re_Framework.CoreBase.Helper.Element
                 element.Click();
         }
 
-        public static bool IsRadioButtonSelected(string locator, int type = (int)Locator.CssSelector)
+        public static async Task<bool> IsRadioButtonSelectedAsync(string locator, int type = (int)Locator.CssSelector)
         {
+            await CheckerHelper.CheckElementIsEnable(locator, type);
             element = GenericHelper.GetElement(locator, type);
             string flag = element.GetAttribute("checked");
 
@@ -28,8 +31,9 @@ namespace Re_Framework.CoreBase.Helper.Element
                 return flag.Equals("true") || flag.Equals("checked");
         }
 
-        public static bool IsRadioButtonDisabled(string locator, int type = (int)Locator.CssSelector)
+        public static async Task<bool> IsRadioButtonDisabledAsync(string locator, int type = (int)Locator.CssSelector)
         {
+            await CheckerHelper.CheckElementIsEnable(locator, type);
             element = GenericHelper.GetElement(locator, type);
             string flag = element.GetAttribute("disabled");
 

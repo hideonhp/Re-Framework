@@ -20,20 +20,14 @@ namespace Re_Framework.CoreBase.PageObjects
         #endregion
 
         #region Actions
-        protected Task<bool> CheckTextBoxLinkIsEnable()
-        {
-            WaitHelper.NaniWait(() => ButtonHelper.IsButtonEnabled(ElementsLink, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
 
         #endregion
 
         #region Navigation
-        public async Task<bool> NaviGateToElementsPage()
+        public Task<bool> NaviGateToElementsPage()
         {
-            await CheckTextBoxLinkIsEnable();
             ButtonHelper.ClickButton(ElementsLink, (int)Locator.XPath);
-            return true;
+            return Task.FromResult(true);
         }
 
         #endregion

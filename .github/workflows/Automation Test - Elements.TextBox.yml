@@ -1,4 +1,4 @@
-name: Elements CheckBox
+name: Elements TextBox
 
 on:
     workflow_dispatch:
@@ -29,5 +29,5 @@ jobs:
       run: dotnet restore
     - name: Build app for release
       run: msbuild Re-Framework.csproj
-    - name: Test Check Box
+    - name: Test Text Box
       run: dotnet test --filter TestCategory="TextBox tests"

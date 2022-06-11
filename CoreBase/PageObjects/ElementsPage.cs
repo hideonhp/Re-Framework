@@ -50,262 +50,123 @@ namespace Re_Framework.CoreBase.PageObjects
         protected string CheckBoxResultReturn = "#result";
         #endregion
 
-        #region Private Method
-        protected Task<bool> CheckUserMailTextBoxIsEnable()
-        {
-            WaitHelper.NaniWait(() => TextBoxHelper.IsTextBoxEnabled(UserMailTextBox, (int)Locator.CssSelector));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckUserCurrentAdressTextBoxIsEnable()
-        {
-            WaitHelper.NaniWait(() => TextBoxHelper.IsTextBoxEnabled(UserCurrentAdressTextBox, (int)Locator.CssSelector));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckUserPermanentAdressTextBoxIsEnable()
-        {
-            WaitHelper.NaniWait(() => TextBoxHelper.IsTextBoxEnabled(UserPermanentAdressTextBox, (int)Locator.CssSelector));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckUserNameTextBoxIsEnable()
-        {
-            WaitHelper.NaniWait(() => TextBoxHelper.IsTextBoxEnabled(UserNameTextBox, (int)Locator.CssSelector));
-            return Task.FromResult(true);
-        }
-
-        protected Task<bool> CheckUserNameReturnIsEnable()
-        {
-            WaitHelper.NaniWait(() => TextBoxHelper.IsTextBoxEnabled(UserNameReturn, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckUserMailReturnIsEnable()
-        {
-            WaitHelper.NaniWait(() => TextBoxHelper.IsTextBoxEnabled(UserMailReturn, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckUserCurrentAdressReturnIsEnable()
-        {
-            WaitHelper.NaniWait(() => TextBoxHelper.IsTextBoxEnabled(UserCurrentAdressReturn, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckUserPermanentAdressReturnIsEnable()
-        {
-            WaitHelper.NaniWait(() => TextBoxHelper.IsTextBoxEnabled(UserPermanentAdressReturn, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-
-        protected Task<bool> CheckTextBoxLinkIsEnable()
-        {
-            WaitHelper.NaniWait(() => ButtonHelper.IsButtonEnabled(TextBoxLink, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckCheckBoxLinkIsEnable()
-        {
-            WaitHelper.NaniWait(() => ButtonHelper.IsButtonEnabled(CheckBoxLink, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckWebTableComponentIsEnable()
-        {
-            WaitHelper.NaniWait(() => WebTableHelper.IsEnabled(WebTableComponent, (int)Locator.CssSelector));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckWebTableLinkIsEnable()
-        {
-            WaitHelper.NaniWait(() => ButtonHelper.IsButtonEnabled(WebTablesLink, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckTextBoxSubmitButtonIsEnable()
-        {
-            WaitHelper.NaniWait(() => ButtonHelper.IsButtonEnabled(TextBoxSubmitButton, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-
-        protected Task<bool> CheckCheckBoxHomeIsEnable()
-        {
-            WaitHelper.NaniWait(() => CheckBoxHelper.IsCheckBoxEnable(CheckBoxHome, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckExpandCheckBoxHomeButtonIsEnable()
-        {
-            WaitHelper.NaniWait(() => ButtonHelper.IsButtonEnabled(ExpandCheckBoxHomeButton, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckCheckBoxDesktopIsEnable()
-        {
-            WaitHelper.NaniWait(() => CheckBoxHelper.IsCheckBoxEnable(CheckBoxDesktop, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckExpandCheckBoxDesktopButtonIsEnable()
-        {
-            WaitHelper.NaniWait(() => ButtonHelper.IsButtonEnabled(ExpandCheckBoxDesktopButton, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckCheckBoxDocumentIsEnable()
-        {
-            WaitHelper.NaniWait(() => CheckBoxHelper.IsCheckBoxEnable(CheckBoxDocument, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckExpandCheckBoxDocumentButtonIsEnable()
-        {
-            WaitHelper.NaniWait(() => ButtonHelper.IsButtonEnabled(ExpandCheckBoxDocumentButton, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckCheckBoxDownloadsIsEnable()
-        {
-            WaitHelper.NaniWait(() => CheckBoxHelper.IsCheckBoxEnable(CheckBoxDownloads, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckExpandCheckBoxDownloadsButtonIsEnable()
-        {
-            WaitHelper.NaniWait(() => ButtonHelper.IsButtonEnabled(ExpandCheckBoxDownloadsButton, (int)Locator.XPath));
-            return Task.FromResult(true);
-        }
-        protected Task<bool> CheckCheckBoxResultReturnIsEnable()
-        {
-            WaitHelper.NaniWait(() => TextBoxHelper.IsTextBoxEnabled(CheckBoxResultReturn, (int)Locator.CssSelector));
-            return Task.FromResult(true);
-        }
-
-        #endregion
-
         #region Public Method
-        public async Task<bool> SendKeyToUserMailTextBoxAsync(string text)
+        public Task<bool> SendKeyToUserMailTextBoxAsync(string text)
         {
-            await CheckUserMailTextBoxIsEnable();
-            TextBoxHelper.TypeInTextBox(UserMailTextBox, (int)Locator.CssSelector, text);
-            return true;
+            TextBoxHelper.TypeInTextBoxAsync(UserMailTextBox, (int)Locator.CssSelector, text);
+            return Task.FromResult(true);
         }
-        public async Task<bool> SendKeyToUserCurrentAdressTextBoxAsync(string text)
+        public Task<bool> SendKeyToUserCurrentAdressTextBoxAsync(string text)
         {
-            await CheckUserCurrentAdressTextBoxIsEnable();
-            TextBoxHelper.TypeInTextBox(UserCurrentAdressTextBox, (int)Locator.CssSelector, text);
-            return true;
+            TextBoxHelper.TypeInTextBoxAsync(UserCurrentAdressTextBox, (int)Locator.CssSelector, text);
+            return Task.FromResult(true);
         }
-        public async Task<bool> SendKeyToUserPermanentAdressTextBoxAsync(string text)
+        public Task<bool> SendKeyToUserPermanentAdressTextBoxAsync(string text)
         {
-            await CheckUserPermanentAdressTextBoxIsEnable();
-            TextBoxHelper.TypeInTextBox(UserPermanentAdressTextBox, (int)Locator.CssSelector, text);
-            return true;
+            TextBoxHelper.TypeInTextBoxAsync(UserPermanentAdressTextBox, (int)Locator.CssSelector, text);
+            return Task.FromResult(true);
         }
-        public async Task<bool> SendKeyToUserNameTextBoxBoxAsync(string text)
+        public Task<bool> SendKeyToUserNameTextBoxBoxAsync(string text)
         {
-            await CheckUserNameTextBoxIsEnable();
-            TextBoxHelper.TypeInTextBox(UserNameTextBox, (int)Locator.CssSelector, text);
-            return true;
+            TextBoxHelper.TypeInTextBoxAsync(UserNameTextBox, (int)Locator.CssSelector, text);
+            return Task.FromResult(true);
         }
-        public async Task<bool> ClickTextBoxSubmitButtonAsync()
+        public Task<bool> ClickTextBoxSubmitButtonAsync()
         {
-            await CheckTextBoxSubmitButtonIsEnable();
             ButtonHelper.ClickButton(TextBoxSubmitButton, (int)Locator.XPath);
-            return true;
+            return Task.FromResult(true);
         }
 
-        public async Task<bool> ClickCheckBoxHomeAsync()
+        public Task<bool> ClickCheckBoxHomeAsync()
         {
-            await CheckCheckBoxHomeIsEnable();
-            CheckBoxHelper.CheckedCheckBox(CheckBoxHome, (int)Locator.XPath);
-            return true;
+            CheckBoxHelper.CheckedCheckBoxAsync(CheckBoxHome, (int)Locator.XPath);
+            return Task.FromResult(true);
         }
-        public async Task<bool> ClickCheckBoxDesktopAsync()
+        public Task<bool> ClickCheckBoxDesktopAsync()
         {
-            await CheckCheckBoxDesktopIsEnable();
-            CheckBoxHelper.CheckedCheckBox(CheckBoxDesktop, (int)Locator.XPath);
-            return true;
+            CheckBoxHelper.CheckedCheckBoxAsync(CheckBoxDesktop, (int)Locator.XPath);
+            return Task.FromResult(true);
         }
         public async Task<bool> CheckCheckBoxHomeHalfAsync()
         {
-            await CheckCheckBoxHomeIsEnable();
-            CheckBoxHelper.IsCheckBoxIntermediate(CheckBoxHome, (int)Locator.XPath);
-            return true;
+            await CheckBoxHelper.IsCheckBoxIntermediateAsync(CheckBoxHome, (int)Locator.XPath);
+            return await Task.FromResult(true);
         }
-        public async Task<bool> ClickExpandCheckBoxHomeButtonAsync()
+        public Task<bool> ClickExpandCheckBoxHomeButtonAsync()
         {
-            await CheckExpandCheckBoxHomeButtonIsEnable();
             ButtonHelper.ClickButton(ExpandCheckBoxHomeButton, (int)Locator.XPath);
-            return true;
+            return Task.FromResult(true);
         }
-        public async Task<bool> ClickExpandCheckBoxDesktopButtonAsync()
+        public Task<bool> ClickExpandCheckBoxDesktopButtonAsync()
         {
-            await CheckExpandCheckBoxDesktopButtonIsEnable();
             ButtonHelper.ClickButton(ExpandCheckBoxDesktopButton, (int)Locator.XPath);
-            return true;
+            return Task.FromResult(true);
         }
-        public async Task<bool> ClickExpandCheckBoxDocumentButtonAsync()
+        public Task<bool> ClickExpandCheckBoxDocumentButtonAsync()
         {
-            await CheckExpandCheckBoxDocumentButtonIsEnable();
             ButtonHelper.ClickButton(ExpandCheckBoxDocumentButton, (int)Locator.XPath);
-            return true;
+            return Task.FromResult(true);
         }
-        public async Task<bool> ClickExpandCheckBoxDownloadsButtonAsync()
+        public Task<bool> ClickExpandCheckBoxDownloadsButtonAsync()
         {
-            await CheckExpandCheckBoxDownloadsButtonIsEnable();
             ButtonHelper.ClickButton(ExpandCheckBoxDownloadsButton, (int)Locator.XPath);
-            return true;
+            return Task.FromResult(true);
         }
-        public async Task<string> GetTextFromCheckBoxResultReturnAsync()
+        public Task<string> GetTextFromCheckBoxResultReturnAsync()
         {
-            await CheckCheckBoxResultReturnIsEnable();
-            var text = TextHelper.GetTextInside(CheckBoxResultReturn, (int)Locator.CssSelector);
-            return text;
+            var text = TextHelper.GetTextInsideAsync(CheckBoxResultReturn, (int)Locator.CssSelector);
+            return Task.FromResult(text.Result);
         }
-        public async Task<string> GetTextFromUserNameReturnAsync()
+        public Task<string> GetTextFromUserNameReturnAsync()
         {
-            await CheckUserNameReturnIsEnable();
-            var text = TextHelper.GetTextInside(UserNameReturn, (int)Locator.XPath);
-            return text;
+            var text = TextHelper.GetTextInsideAsync(UserNameReturn, (int)Locator.XPath);
+            return Task.FromResult(text.Result);
         }
-        public async Task<string> GetTextFromUserMailReturnAsync()
+        public Task<string> GetTextFromUserMailReturnAsync()
         {
-            await CheckUserMailReturnIsEnable();
-            var text = TextHelper.GetTextInside(UserMailReturn, (int)Locator.XPath);
-            return text;
+            var text = TextHelper.GetTextInsideAsync(UserMailReturn, (int)Locator.XPath);
+            return Task.FromResult(text.Result);
         }
-        public async Task<string> GetTextFromUserCurrentAdressReturnAsync()
+        public Task<string> GetTextFromUserCurrentAdressReturnAsync()
         {
-            await CheckUserCurrentAdressReturnIsEnable();
-            var text = TextHelper.GetTextInside(UserCurrentAdressReturn, (int)Locator.XPath);
-            return text;
+            var text = TextHelper.GetTextInsideAsync(UserCurrentAdressReturn, (int)Locator.XPath);
+            return Task.FromResult(text.Result);
         }
-        public async Task<string> GetTextFromUserPermanentAdressReturnAsync()
+        public Task<string> GetTextFromUserPermanentAdressReturnAsync()
         {
-            await CheckUserPermanentAdressReturnIsEnable();
-            var text = TextHelper.GetTextInside(UserPermanentAdressReturn, (int)Locator.XPath);
-            return text;
+            var text = TextHelper.GetTextInsideAsync(UserPermanentAdressReturn, (int)Locator.XPath);
+            return Task.FromResult(text.Result);
         }
 
-        public async Task<List<string>> GetWebTableTDAsync()
+        /*public Task<List<string>> GetWebTableTDAsync()
         {
-            await CheckWebTableComponentIsEnable();
-            List<string> text = WebTableHelper.GetAllRowTDFromTable(WebTableComponent, (int)Locator.XPath);
-            return text;
+            List<string> text = WebTableHelper.GetAllRowTDFromTableAsync(WebTableComponent, (int)Locator.CssSelector);
+            return Task.FromResult(text);
         }
-        public async Task<List<string>> GetWebTableTRAsync()
+        public Task<List<string>> GetWebTableTRAsync()
         {
-            await CheckWebTableComponentIsEnable();
-            List<string> text = WebTableHelper.GetAllRowTRFromTable(WebTableComponent, (int)Locator.XPath);
-            return text;
-        }
+            List<string> text = WebTableHelper.GetAllRowTRFromTableAsync(WebTableComponent, (int)Locator.CssSelector);
+            return Task.FromResult(text);
+        }*/
 
         #endregion
 
         #region Navigation
 
-        public async Task<bool> NaviGateToTextBoxComponent()
+        public Task<bool> NaviGateToTextBoxComponent()
         {
-            await CheckTextBoxLinkIsEnable();
             ButtonHelper.ClickButton(TextBoxLink, (int)Locator.XPath);
-            return true;
+            return Task.FromResult(true);
         }
-        public async Task<bool> NaviGateToCheckBoxComponent()
+        public Task<bool> NaviGateToCheckBoxComponent()
         {
-            await CheckCheckBoxLinkIsEnable();
             ButtonHelper.ClickButton(CheckBoxLink, (int)Locator.XPath);
-            return true;
+            return Task.FromResult(true);
         }
-        public async Task<bool> NaviGateToWebTableComponent()
+        public Task<bool> NaviGateToWebTableComponent()
         {
-            await CheckWebTableLinkIsEnable();
             ButtonHelper.ClickButton(WebTablesLink, (int)Locator.XPath);
-            return true;
+            return Task.FromResult(true);
         }
 
         #endregion
