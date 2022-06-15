@@ -198,6 +198,7 @@
     <Compile Include="CoreBase\BaseApi.cs" />
     <Compile Include="CoreBase\BaseClass.cs" />
     <Compile Include="CoreBase\BasePage.cs" />
+    <Compile Include="CoreBase\BasePageAPI.cs" />
     <Compile Include="CoreBase\Configuration\AppConfigReader.cs" />
     <Compile Include="CoreBase\Configuration\BrowserType.cs" />
     <Compile Include="CoreBase\Helper\Common\ApiHelper.cs" />
@@ -219,6 +220,8 @@
     <Compile Include="CoreBase\Helper\Json\HandleContent.cs" />
     <Compile Include="CoreBase\Interfaces\IConfig.cs" />
     <Compile Include="CoreBase\Models\BooksReq.cs" />
+    <Compile Include="CoreBase\Models\TokenReq.cs" />
+    <Compile Include="CoreBase\Models\UserDetailReq.cs" />
     <Compile Include="CoreBase\Models\UserReq.cs" />
     <Compile Include="CoreBase\PageObjects\ElementsPage.cs" />
     <Compile Include="CoreBase\PageObjects\HomePage.cs" />

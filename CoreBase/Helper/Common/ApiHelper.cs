@@ -19,9 +19,17 @@ namespace Re_Framework.CoreBase.Helper.Common
             certificate = new X509Certificate2(certFile);
         }
 
-        public RestClient SetUrl(string baseUrl, string endpoint)
+        public RestClient SetUrl(string baseUrl, string endpoint, bool altenatyUrl = false)
         {
-            var url = Path.Combine(baseUrl, endpoint);
+            string url;
+            if (altenatyUrl)
+            {
+                url = baseUrl + endpoint;
+            }
+            else
+            {
+                url = Path.Combine(baseUrl, endpoint);
+            }
             client = new RestClient(url);
             //client.ClientCertificates = new X509CertificateCollection() { certificate };
             //client.Proxy = new WebProxy();
@@ -58,8 +66,9 @@ namespace Re_Framework.CoreBase.Helper.Common
                 Method = Method.Post
             };
             request.AddHeader("Accept", "application/json");
-            //request.AddParameter("application/json", payload, ParameterType.RequestBody);
-            request.AddBody(payload);
+            request.AddHeader("Content-Type", "application/json");
+            request.AddParameter("application/json", payload, ParameterType.RequestBody);
+            //request.AddBody(payload);
             request.RequestFormat = DataFormat.Json;
             return request;
         }

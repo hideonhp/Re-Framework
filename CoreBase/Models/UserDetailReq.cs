@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Re_Framework.CoreBase.Models
 {
-    public partial class BooksReq
+    public class UserDetailReq
     {
-        public List<Book> Books { get; set; }
+        public string UserId { get; set; }
+        public string Username { get; set; }
+        public List<Books> Books { get; set; }
     }
-
-    public partial class Book
+    public partial class Books
     {
         public string Isbn { get; set; }
         public string Title { get; set; }
@@ -18,6 +22,6 @@ namespace Re_Framework.CoreBase.Models
         public string Publisher { get; set; }
         public long Pages { get; set; }
         public string Description { get; set; }
-        public Uri Website { get; set; }
+        public string Website { get; set; }
     }
 }

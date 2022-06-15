@@ -50,5 +50,10 @@ namespace Re_Framework.CoreBase.Configuration
         {
             return ConfigurationManager.AppSettings.Get(AppConfigKeys.Website);
         }
+
+        public string GetWebsiteAPI()
+        {
+            return ConfigurationManager.AppSettings.Get(AppConfigKeys.WebsiteAPI);
+        }
     }
 }

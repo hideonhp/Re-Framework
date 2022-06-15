@@ -36,5 +36,27 @@ namespace Re_Framework.CoreBase
             var response = await apiHelper.GetResponseAsync(client, request);
             return response;
         }
+
+        public async Task<RestResponse> GetTokenFromAccWithApi(string baseUrl, dynamic payload)
+        {
+            var client = apiHelper.SetUrl(baseUrl, "Account/v1/GenerateToken", true);
+            var request = apiHelper.CreatePostRequest<UserReq>(payload);
+            var response = await apiHelper.GetResponseAsync(client, request);
+            return response;
+        }
+        public async Task<RestResponse> GetAuthoFromAccWithApi(string baseUrl, dynamic payload)
+        {
+            var client = apiHelper.SetUrl(baseUrl, "Account/v1/Authorized", true);
+            var request = apiHelper.CreatePostRequest<UserReq>(payload);
+            var response = await apiHelper.GetResponseAsync(client, request);
+            return response;
+        }
+        public async Task<RestResponse> DelAccWithApi(string baseUrl, dynamic id)
+        {
+            var client = apiHelper.SetUrl(baseUrl, "Account/v1/User/" + id, true);
+            var request = apiHelper.CreateDeleteRequest();
+            var response = await apiHelper.GetResponseAsync(client, request);
+            return response;
+        }
     }
 }
