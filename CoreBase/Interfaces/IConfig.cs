@@ -9,6 +9,7 @@ namespace Re_Framework.CoreBase.Interfaces
         string GetPassword();
         string GetWebsite();
         string GetWebsiteAPI();
+        string GetWebsiteAPIReqRes();
         int GetPageLoadTimeOut();
         int GetElementLoadTimeOut();
 

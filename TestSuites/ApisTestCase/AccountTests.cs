@@ -48,7 +48,7 @@ namespace Re_Framework.TestSuites.ApisTestCase
             Assert.AreEqual(200, (int)responseAutho.StatusCode);
             Assert.AreEqual("OK", (string)responseAutho.StatusDescription);
 
-            //Delete aacount
+            //Delete account
             var responseDel = await baseApi.DelAccWithApi(ObjectRepository.Config.GetWebsite(), userIdCreAcc);
 
             Assert.AreEqual(401, (int)responseDel.StatusCode);

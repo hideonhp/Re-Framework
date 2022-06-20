@@ -7,6 +7,7 @@
         public const string Password = "Password";
         public const string Website = "Website";
         public const string WebsiteAPI = "WebsiteAPI";
+        public const string WebsiteAPIReqRes = "WebsiteAPIReqRes";
         public const string PageLoadTimeout = "PageLoadTimeout";
         public const string ElementLoadTimeout = "ElementLoadTimeout";
     }

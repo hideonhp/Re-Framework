@@ -12,7 +12,7 @@ namespace Re_Framework.TestSuites.ApisTestCase
     {
         [TestMethod("Get books and verify it")]
         [TestCategory("ApiBook tests")]
-        public async Task AccountTests1()
+        public async Task BookStoreTests1()
         {
             var baseApi = new BaseApi();
             var response = await baseApi.GetBooks(ObjectRepository.Config.GetWebsite());
