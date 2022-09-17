@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  Build Elements.CheckBox:
+  Build_Elements.CheckBox:
 
     runs-on: windows-latest
     
@@ -28,7 +28,7 @@ jobs:
     - name: Test
       run: dotnet test --filter TestCategory="CheckBox tests"
       
-  Build Elements.TextBox:
+  Build_Elements.TextBox:
 
     runs-on: windows-latest
     
@@ -49,7 +49,7 @@ jobs:
     - name: Test
       run: dotnet test --filter TestCategory="TextBox tests"
       
-  Build Elements.WebTable:
+  Build_Elements.WebTable:
 
     runs-on: windows-latest
     
